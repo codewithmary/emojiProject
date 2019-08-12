@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojinal_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zf0-wD-Yd6">
+                                <rect key="frame" x="0.0" y="111" width="453" height="44"/>
+                                <color key="barTintColor" red="0.80408350549999996" green="1" blue="0.71799945919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textShadowColor" red="0.80408350549999996" green="1" blue="0.71799945919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="A GUIDE TO SUPERFOODS" id="gqM-YJ-Nch"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyF-lD-yvO">
+                                <rect key="frame" x="31" y="477" width="146" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="135"/>
+                                <state key="normal" title="🥑"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wA-D4-iAF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q69-2J-kSg">
+                                <rect key="frame" x="134" y="217" width="146" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="135"/>
+                                <state key="normal" title="🥦"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwl-tO-NML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mo-ox-YAw">
+                                <rect key="frame" x="246" y="466" width="146" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="135"/>
+                                <state key="normal" title="🥒"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2R-XQ-QG5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80408350549999996" green="1" blue="0.71799945919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Mo-ox-YAw" firstAttribute="top" secondItem="q69-2J-kSg" secondAttribute="bottom" constant="75" id="1lh-Ob-BW2"/>
+                            <constraint firstItem="q69-2J-kSg" firstAttribute="top" secondItem="zf0-wD-Yd6" secondAttribute="bottom" constant="62" id="2UI-wj-s2L"/>
+                            <constraint firstItem="ZyF-lD-yvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="3Fm-IS-9sS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Mo-ox-YAw" secondAttribute="trailing" constant="22" id="4lx-Jg-HPj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q69-2J-kSg" secondAttribute="trailing" constant="134" id="8ND-jE-w9W"/>
+                            <constraint firstItem="ZyF-lD-yvO" firstAttribute="top" secondItem="q69-2J-kSg" secondAttribute="bottom" constant="86" id="FGe-tp-W6s"/>
+                            <constraint firstItem="2Mo-ox-YAw" firstAttribute="leading" secondItem="ZyF-lD-yvO" secondAttribute="trailing" constant="69" id="P9j-w8-qv1"/>
+                            <constraint firstItem="zf0-wD-Yd6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="agW-a1-0jN"/>
+                            <constraint firstItem="2Mo-ox-YAw" firstAttribute="leading" secondItem="ZyF-lD-yvO" secondAttribute="trailing" constant="69" id="gzx-Jf-hRk"/>
+                            <constraint firstItem="zf0-wD-Yd6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n7E-LR-ZTg"/>
+                            <constraint firstItem="zf0-wD-Yd6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="qyf-FS-0We"/>
+                            <constraint firstItem="q69-2J-kSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="uQ1-9I-Q54"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
